@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blind Box Dieline</title>
+  <style>
+    body {
+      background-color: #f8f8f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+    .dieline {
+      position: relative;
+      width: 930px;
+      height: 310px;
+      background-color: #fff;
+      border: 2px dashed #999;
+    }
+    .panel {
+      position: absolute;
+      border: 1px solid #333;
+      background-color: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      text-align: center;
+    }
+    .glue-tab { left: 0; top: 80px; width: 15px; height: 150px; }
+    .side-left { left: 15px; top: 80px; width: 160px; height: 150px; }
+    .front { left: 175px; top: 80px; width: 240px; height: 150px; background-color: #ffc; border: 2px dashed red; }
+    .side-right { left: 415px; top: 80px; width: 160px; height: 150px; }
+    .back { left: 575px; top: 80px; width: 240px; height: 150px; }
+    .bottom-left { left: 15px; top: 230px; width: 160px; height: 80px; background-color: #ddd; }
+    .bottom-front { left: 175px; top: 230px; width: 240px; height: 80px; background-color: #ddd; }
+    .bottom-right { left: 415px; top: 230px; width: 160px; height: 80px; background-color: #ddd; }
+    .bottom-back { left: 575px; top: 230px; width: 240px; height: 80px; background-color: #ddd; }
+    .label {
+      position: absolute;
+      background: rgba(255,255,255,0.8);
+      padding: 2px 4px;
+      font-size: 10px;
+    }
+    .label-front { top: 140px; left: 260px; color: red; }
+  </style>
+</head>
+<body>
+  <div class="dieline">
+    <div class="panel glue-tab">粘边</div>
+    <div class="panel side-left">左侧面<br/>160×150</div>
+    <div class="panel front">正面<br/>240×150</div>
+    <div class="panel side-right">右侧面<br/>160×150</div>
+    <div class="panel back">背面<br/>240×150</div>
+    <div class="panel bottom-left">左底盖<br/>160×80</div>
+    <div class="panel bottom-front">正底盖<br/>240×80</div>
+    <div class="panel bottom-right">右底盖<br/>160×80</div>
+    <div class="panel bottom-back">背底盖<br/>240×80</div>
+    <div class="label label-front">⚠ 撕口线起点：距底部30mm，斜向上至右侧</div>
+  </div>
+</body>
+</html>
